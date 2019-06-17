@@ -1,0 +1,341 @@
+{
+	"slider":[
+	{"imgurl":"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2614390025,3511953918&fm=26&gp=0.jpg","title":"魔法禁书目录第三季 第26话"},
+	{"imgurl":"http://image.tmdb.org/t/p/original/6jjx8qsnMdevUIBzxtQbmQ6OOb6.jpg","title":"火影忍者 博人传之火影次世代  第100话"},
+	{"imgurl":"http://b-ssl.duitang.com/uploads/item/201603/07/20160307222401_ArPGE.jpeg","title":"海贼王 第878话"},
+	{"imgurl":"http://qiniuimg.qingmang.mobi/image/orion/c70ea4cab4aadf64d27fd151cd5b56f0_500_357.jpeg","title":"刀剑神域第三季 第24话"},
+	{"imgurl":"https://s2.ax1x.com/2019/05/06/ED3T0K.jpg","title":"名侦探柯南 第990话"},
+	{"imgurl":"http://attachment1.tgbusdata.cn/jpg/d0/e2/7421e7654cbba6eab545b9bd723d_3d0617e666f3780ab64a05c713636c5b84608369420cad9f69f552442e72e54bffeb25d42071ff64.jpg","title":"游戏王vrains 第92话"}
+	],
+	"subnav":["首页","日本动漫","国产动漫","欧美动漫","动漫电影","剧场版","OVA版","真人版","宣传版","特典版","TV版"],
+	
+	"mian": [{
+	"name": "笑傲昙天外传：宿命，双头风魔",
+	"num": "1集全",
+	"imgurl": "http:\/\/wxt.sinaimg.cn\/large\/7ab34015gy1g23fi3qttbj20f00l7mz7.jpg"
+	}, {
+	"name": "笑傲昙天外传：樱华，天望架桥",
+	"num": "1集全",
+	"imgurl": "http:\/\/wxt.sinaimg.cn\/large\/7ab34015gy1g23fi3eel0j20f00l6dib.jpg"
+	}, {
+	"name": "江海渔童之巨龟奇缘",
+	"num": "1集全",
+	"imgurl": "http:\/\/wxt.sinaimg.cn\/large\/7ab34015gy1g2i4nl3t0bj20f00midhp.jpg"
+	}, {
+	"name": "年轻老板娘是小学生!剧场版",
+	"num": "1集全",
+	"imgurl": "http:\/\/wxt.sinaimg.cn\/large\/7ab34015gy1g2i4qvx0g7j20f00l7mzj.jpg"
+	}, {
+	"name": "王室教师海涅剧场版",
+	"num": "1集全",
+	"imgurl": "http:\/\/wxt.sinaimg.cn\/large\/7ab34015gy1g2o7ohtx5mj20f00kwacg.jpg"
+	}, {
+	"name": "灰色：幻影扳机",
+	"num": "更新至1集",
+	"imgurl": "http:\/\/photo.tv.yundousoft.com\/comic\/image\/j505451905652733.jpg\/pic_200.jpg"
+	}, {
+	"name": "希瑞与非凡的公主们 第一季",
+	"num": "13集全",
+	"imgurl": "http:\/\/photo.tv.yundousoft.com\/comic\/image\/j504433705369681.jpg\/pic_200.jpg"
+	}, {
+	"name": "希瑞与非凡的公主们 第二季",
+	"num": "7集全",
+	"imgurl": "http:\/\/photo.tv.yundousoft.com\/comic\/image\/j504433708687902.jpg\/pic_200.jpg"
+	}, {
+	"name": "咱们裸熊 第一季",
+	"num": "26集全",
+	"imgurl": "http:\/\/photo.tv.yundousoft.com\/comic\/image\/j504440864054385.jpg\/pic_200.jpg"
+	}, {
+	"name": "咱们裸熊 第二季",
+	"num": "22集全",
+	"imgurl": "http:\/\/photo.tv.yundousoft.com\/comic\/image\/j504440866917160.jpg\/pic_200.jpg"
+	}, {
+	"name": "咱们裸熊 第三季",
+	"num": "43集全",
+	"imgurl": "http:\/\/photo.tv.yundousoft.com\/comic\/image\/j504440869277284.jpg\/pic_200.jpg"
+	}, {
+	"name": "咱们裸熊 第四季",
+	"num": "更新至3集",
+	"imgurl": "http:\/\/photo.tv.yundousoft.com\/comic\/image\/j504440871927008.jpg\/pic_200.jpg"
+	}, {
+	"name": "请吃红小豆吧！第二季",
+	"num": "16集全",
+	"imgurl": "http:\/\/wxt.sinaimg.cn\/large\/7ab34015gy1g2o7po3c6zj20f00k00t9.jpg"
+	}, {
+	"name": "万古仙穹 第三季",
+	"num": "更新至11集",
+	"imgurl": "http:\/\/wxt.sinaimg.cn\/large\/7ab34015gy1g23fhhe4rgj20f00miwg5.jpg"
+	}, {
+	"name": "狐妖小红娘",
+	"num": "更新至100集",
+	"imgurl": "http:\/\/wxt.sinaimg.cn\/large\/7ab34015gy1g23eykqv4uj20cg0iodio.jpg"
+	}, {
+	"name": "斗罗大陆",
+	"num": "更新至50集",
+	"imgurl": "http:\/\/wxt.sinaimg.cn\/large\/7ab34015gy1g23fe2v02nj205k08c74a.jpg"
+	}, {
+	"name": "万界神主",
+	"num": "更新至28集",
+	"imgurl": "http:\/\/wxt.sinaimg.cn\/large\/7ab34015gy1g23fheg6p6j205k08cglu.jpg"
+	}, {
+	"name": "崩坏星河",
+	"num": "更新至2集",
+	"imgurl": "http:\/\/wxt.sinaimg.cn\/large\/005BYqpggy1g2q915h33oj30f00l73zw.jpg"
+	}, {
+	"name": "女子高中生",
+	"num": "更新至5集",
+	"imgurl": "http:\/\/wxt.sinaimg.cn\/large\/7ab34015gy1g23fhmgxswj20f00ib75w.jpg"
+	}, {
+	"name": "Star☆ Twinkle 光之美少女",
+	"num": "更新至14集",
+	"imgurl": "http:\/\/wxt.sinaimg.cn\/large\/7ab34015gy1g23fhg5ykkj20f00l7wi3.jpg"
+	}, {
+	"name": "超可动女孩1\/6",
+	"num": "更新至5集",
+	"imgurl": "http:\/\/wxt.sinaimg.cn\/large\/7ab34015gy1g23fhm9pv4j20f00l7ad8.jpg"
+	}, {
+	"name": "海贼王",
+	"num": "更新至883集",
+	"imgurl": "http:\/\/wxt.sinaimg.cn\/large\/7ab34015gy1g23elhnl0vj20cg0io0wb.jpg"
+	}, {
+	"name": "灰色：幻影扳机",
+	"num": "更新至1集",
+	"imgurl": "http:\/\/photo.tv.yundousoft.com\/comic\/image\/j505451905652733.jpg\/pic_200.jpg"
+	}, {
+	"name": "火影忍者 博人传之火影次世代",
+	"num": "更新至105集",
+	"imgurl": "http:\/\/wxt.sinaimg.cn\/large\/7ab34015gy1g23fxqdk9ej205k08cmxp.jpg"
+	}, {
+	"name": "宠物小精灵 太阳·月亮",
+	"num": "更新至120集",
+	"imgurl": "http:\/\/wxt.sinaimg.cn\/large\/7ab34015gy1g23fbt1ucbj205k08cq3m.jpg"
+	}, {
+	"name": "拾又之国",
+	"num": "更新至6集",
+	"imgurl": "http:\/\/wxt.sinaimg.cn\/large\/7ab34015gy1g23fhjruo3j20f00lqwhd.jpg"
+	}, {
+	"name": "妖怪手表！2019",
+	"num": "更新至4集",
+	"imgurl": "http:\/\/wxt.sinaimg.cn\/large\/7ab34015gy1g23fi0sfhoj20bt0gojtj.jpg"
+	}, {
+	"name": "消灭都市",
+	"num": "更新至5集",
+	"imgurl": "http:\/\/wxt.sinaimg.cn\/large\/7ab34015gy1g23fhkr83oj20f00lfabv.jpg"
+	}, {
+	"name": "深夜的超自然公务员",
+	"num": "更新至5集",
+	"imgurl": "http:\/\/wxt.sinaimg.cn\/large\/7ab34015gy1g23fhhs6vxj20f00latah.jpg"
+	}, {
+	"name": "进击的巨人第三季",
+	"num": "更新至14集",
+	"imgurl": "http:\/\/wxt.sinaimg.cn\/large\/7ab34015gy1g23fgucqy6j207s0ap3zj.jpg"
+	}],
+	"d1":{
+			"name":"火影忍者",
+			"imgurl":"http://photo.tv.yundousoft.com/comic/acg/2016/12/13/97dfbd255843b8effe4520d3c0d51002a558fba7.jpg/pic_200.jpg",
+			"newnum":"720集全",
+			"bm":"火影忍者疾风传\/NARUTO -ナルト-",
+			"pf":"8.9",
+			"sy":"2002-10-10",
+			"type":"忍者冒险格斗",
+			"bq":"  日语 tv",
+			"jj":"《火影忍者》十多年前一只拥有巨大威力的妖兽“九尾妖狐”袭击了木叶忍者村，当时的第四代火影拼尽全力，以自己的生命为代价将“九尾妖狐”封印在了刚出生的鸣人身上。木叶村终于恢复了平静，但村民们却把鸣人当成像“九尾妖狐”那样的怪物看待，所有人都疏远他。鸣人自小就孤苦无依，一晃十多年过去了，少年鸣人考入了木叶村的忍者学校，结识了好朋友佐助和小樱。佐助是宇智波家族的传人之一，当他还是小孩的时候他的哥哥——一个已经拥有高超忍术的忍者将他们家族的人都杀死了，然后投靠了一直想将木叶村毁灭的大蛇丸，佐助自小就发誓要超越哥哥，为家族报仇。鸣人他们在忍者学校得到了教官卡卡西的精心指点，在他的帮助下去迎接成长中的一次又一次挑战！",
+			"dq":"日本"
+	},
+	"jprmmian": [{
+	"name": "火影忍者 博人传之火影次世代",
+	"num": "更新至110集",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23fxqdk9ej205k08cmxp.jpg"
+	}, {
+	"name": "海贼王",
+	"num": "更新至888集",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23elhnl0vj20cg0io0wb.jpg"
+	}, {
+	"name": "妖精的尾巴 最终季",
+	"num": "更新至35集",
+	"imgurl": "http://css.njhzmxx.com/down/1/j519316879778568.jpg"
+	}, {
+	"name": "青酱不能学习",
+	"num": "更新至10集",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23fhknqcyj20f00kwabr.jpg"
+	}, {
+	"name": "JOJO的奇妙冒险第五部",
+	"num": "更新至33集",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23fgzk61xj205k08c74x.jpg"
+	}, {
+	"name": "魔偶马戏团",
+	"num": "更新至33集",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23fgwnp7bj205k08cdg6.jpg"
+	}, {
+	"name": "贤者之孙",
+	"num": "更新至9集",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23fhl35scj20f00m70vf.jpg"
+	}, {
+	"name": "盾之勇者成名录",
+	"num": "更新至22集",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23fh6qyuqj205k08c74q.jpg"
+	}, {
+	"name": "一拳超人第二季",
+	"num": "更新至9集",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23fbvtd77j20jn0rstbs.jpg"
+	}, {
+	"name": "黑色五叶草",
+	"num": "更新至86集",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23llstm2xj20cg0ion37.jpg"
+	}, {
+	"name": "进击的巨人 第三季 Part.2",
+	"num": "更新至6集",
+	"imgurl": "http://css.njhzmxx.com/down/1/j519337009190885.jpg"
+	}, {
+	"name": "进击的巨人第三季",
+	"num": "更新至18集",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23fxqdk9ej205k08cmxp.jpg"
+	}],
+	"jdrmmian": [{
+	"name": "海贼王",
+	"num": "更新至888集",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23elhnl0vj20cg0io0wb.jpg"
+	}, {
+	"name": "妖精的尾巴",
+	"num": "更新至312集",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23enc1gtjj20cg0io0vd.jpg"
+	}, {
+	"name": "名侦探柯南",
+	"num": "更新至999集",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23ewvtx98j205k08cgnx.jpg"
+	}, {
+	"name": "哆啦A梦 新番",
+	"num": "更新至561集",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23ev4cbkmj20cg0iotb4.jpg"
+	}, {
+	"name": "七合圣石战记",
+	"num": "12集全",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23f6i0xo0j20cg0ioq74.jpg"
+	}, {
+	"name": "幻想万华镜",
+	"num": "更新至13集",
+	"imgurl": "http://css.njhzmxx.com/comic/image/j509616552672935.jpg"
+	}, {
+	"name": "鹡鸰女神",
+	"num": "12集全",
+	"imgurl": "http://css.njhzmxx.com/comic/image/j503506057289445.jpg"
+	}, {
+	"name": "Shuffle! Memories",
+	"num": "11集全+OVA",
+	"imgurl": "http://css.njhzmxx.com/comic/image/j503898723910425.jpg"
+	}, {
+	"name": "哥特萝莉侦探事件簿",
+	"num": "24集全",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g2o7oirus4j20f00l7gns.jpg"
+	}, {
+	"name": "女皇之刃 流浪的战士",
+	"num": "12集全+SP6",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g2i4qyuklgj20f00lfdig.jpg"
+	}, {
+	"name": "圣斗士星矢冥王神话",
+	"num": "10集全",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23eort1e1j205k08cwfr.jpg"
+	}, {
+	"name": "这就是僵尸吗？ 地狱变",
+	"num": "10集全+OVA",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g2i4oebno2j20f00lfmzt.jpg"
+	}],
+	"jcrmmian": [{
+	"name": "K SEVEN STORIES",
+	"num": "更新至7集",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23fgv5ysmj205k08c3yy.jpg"
+	}, {
+	"name": "甲铁城的卡巴内瑞：海门决战",
+	"num": "3集全",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23fhrzinoj20f00l6774.jpg"
+	}, {
+	"name": "灰色：幻影扳机",
+	"num": "更新至2集",
+	"imgurl": "http://css.njhzmxx.com/comic/image/j505451905652733.jpg"
+	}, {
+	"name": "王室教师海涅剧场版",
+	"num": "1集全",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g2o7ohtx5mj20f00kwacg.jpg"
+	}, {
+	"name": "年轻老板娘是小学生!剧场版",
+	"num": "1集全",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g2i4qvx0g7j20f00l7mzj.jpg"
+	}, {
+	"name": "笑傲昙天外传：樱华，天望架桥",
+	"num": "1集全",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23fi3eel0j20f00l6dib.jpg"
+	}, {
+	"name": "笑傲昙天外传",
+	"num": "1集全",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23fi4g8c3j20f00l741d.jpg"
+	}, {
+	"name": "海贼王：狂热行动",
+	"num": "更新至PV",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23fi38g6kj20f00l842d.jpg"
+	}, {
+	"name": "天气之子",
+	"num": "更新至PV",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23fi1lolxj20f00l875s.jpg"
+	}, {
+	"name": "窈窕淑女剧场版",
+	"num": "2集全",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23ff2rglmj205k08caad.jpg"
+	}, {
+	"name": "七人魔法使 剧场版 天空图书馆与真红魔王",
+	"num": "1集全",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23fhhhgfwj20f00l70vd.jpg"
+	}, {
+	"name": "妖精的尾巴剧场版：龙泣",
+	"num": "1集全",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23fhel5lwj205k08cgm5.jpg"
+	}],
+	"ovarmmian": [{
+	"name": "噬血狂袭第三季",
+	"num": "更新至6集",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23fh4nxs5j205k08c0t1.jpg"
+	}, {
+	"name": "荒野的寿飞行队外传 天空的春风飞行队",
+	"num": "更新至3集",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g2o7pliwq6j205006ojrj.jpg"
+	}, {
+	"name": "超龙珠英雄",
+	"num": "更新至11集",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23lk96xjvj207g0a3q3t.jpg"
+	}, {
+	"name": "天真无邪的乐园OAD",
+	"num": "3集全",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g2i4npblpnj20b40fmmyd.jpg"
+	}, {
+	"name": "未来日记OAD",
+	"num": "1集全",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23fhv6z9yj20f00kkmzf.jpg"
+	}, {
+	"name": "我的朋友很少 OAD",
+	"num": "1集全",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23fhnezcej20b40fp0tj.jpg"
+	}, {
+	"name": "秘境探险 法姆&伊莉",
+	"num": "4集全",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23lk7t6soj209m0dwmy2.jpg"
+	}, {
+	"name": "终物语第二季",
+	"num": "6集全",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23fdqp3s6j20cg0iogo6.jpg"
+	}, {
+	"name": "授课到天亮Chu!",
+	"num": "1集全",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23fhursjxj20ku0tmjzb.jpg"
+	}, {
+	"name": "汤摇庄的幽奈同学OAD",
+	"num": "3集全",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23fgu382kj207s0ap3z1.jpg"
+	}, {
+	"name": "擅长捉弄的高木同学OVA",
+	"num": "1集全",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23fgty5bpj207s0apdga.jpg"
+	}, {
+	"name": "食戟之灵OVA",
+	"num": "更新至5集",
+	"imgurl": "http://wxt.sinaimg.cn/large/7ab34015gy1g23fb4z4j2j20cg0io40j.jpg"
+	}]
+}

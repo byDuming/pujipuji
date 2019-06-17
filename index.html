@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>噗叽噗叽-你想看的番，这里都有！</title> 
+		<link rel="shortcut icon" type="image/x-icon" href="img/icon.png"/>
+		<!--轮播js导入-->
+		<script src="swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--轮播css导入-->
+		<link rel="stylesheet" type="text/css" href="swiper.min.css"/>
+		<!--字体图标导入-->
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_1162955_kx0zv6k6fh.css"/>
+		<!--导航栏样式导入-->
+		<link rel="stylesheet" type="text/css" href="css/nav&bootom.css"/>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			/*最近更新*/
+			#mian{
+				width: 780px;
+				/*height: 950px;*/
+				margin: auto;
+				/*border: #000000 solid 1px;*/
+			}
+			#mian-list{
+				overflow:auto;
+			}
+			::-webkit-scrollbar{
+			 
+			   display:none;
+			 
+			}
+			.list-mian{
+				width: 110px;
+				height: 160px;
+				border-radius:10px;
+				position: relative;
+				float:left;
+				margin: 10px;
+				bottom: 0px;
+				transition-property:bottom;
+				transition-duration:0.5s;
+				/*border: #000000 solid 1px;*/
+				box-shadow: 0px 0px 4px black;
+				
+			}
+			.list-mian:hover{
+				bottom: 5px;
+			}
+			.list-right{
+				position:absolute;
+				right: 0px;
+				background-color: black;
+				opacity: 0.8;
+				border-radius:0px 10px 0px 10px;
+				text-align: center;
+				line-height: 25px;
+			}
+			.list-number{
+				font-size: 12px;
+				font: "微软雅黑";
+				color: white;
+				margin: 10px;
+				margin-bottom: 10px;
+			}
+			.list-bottom{
+				width: 100%;
+				height: 30px;
+				background-color: black;
+				opacity: 0.8;
+				border-radius:0px 0px 10px 10px;
+				position:absolute;
+				bottom: 0px;
+				text-align: center;
+				line-height: 30px;
+			}
+			.list-text{
+				width: 100px;
+				font-size: 12px;
+				font-family: "微软雅黑";
+				color: white;
+				text-overflow:ellipsis;
+				overflow:hidden;
+				white-space: nowrap;
+				display: inline-block;
+			}
+			.list-type{
+				margin-top: 15px;
+				margin-bottom: 10px;
+			}
+			.list-type-text{
+				padding: 5px;
+				font-weight: bold;
+				font-family: "微软雅黑";
+				color: white;
+				font-size: 16px;
+				background-color: #2196F3;
+				border-radius:0px 10px 0px 10px;
+				text-align: center;
+				margin-bottom: 10px;
+				margin-left: 10px;
+				box-shadow: 0px 0px 2px #607D8B;
+			}
+			.list-img{
+				width: 110px;
+				height: 160px;
+				border-radius:10px;
+				box-shadow:0px 0px 10px #E3F2FD;
+				position: absolute;
+				float: left;
+			}
+			/*轮播图大小*/
+			.swiper-container{
+				width: 760px;
+				height: 350px;
+				margin-top: 70px;
+				margin-bottom: 10px;
+				border-radius:10px;
+				overflow:hidden;
+			}
+			/*轮播图简介*/
+			.swiper-slide-right{
+				position:absolute;
+				right: 0px;
+				background-color: black;
+				opacity: 0.8;
+				border-radius:0px 10px 0px 10px;
+				text-align: center;
+				line-height: 30px;
+			}
+			.swiper-slide-number{
+				font-size: 16px;
+				font: "微软雅黑";
+				color: white;
+				margin: 10px;
+				margin-bottom: 10px;
+			}
+		</style>
+		<script src="jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				//导航栏种类
+				$.get("pujipuji-data.json",function(data){
+					//导航标题
+					$.each(data.subnav, function(num,val) {
+						$("#subnav").append('<a class="subnav-title">'+val+'</a>')
+					});
+					$(".subnav-title:eq(0)").attr('href',"index.html");
+					$(".subnav-title:eq(1)").attr('href',"rbdm.html");
+					//最近更新
+					$(".subnav-title:eq(0)").css({"color":"#2196F3","background-color":"white"})
+					console.log(data)
+					for(var a = data.mian.length-1 ; a >= 0 ; a--){
+						$("#mian-list").append('<div class="list-mian"><a href="Details/1.html"><img class="list-img" src="'+data.mian[a].imgurl+'"/></a><div class="list-right"><span class="list-number">'+data.mian[a].num+'</span></div><div class="list-bottom"><span class="list-text">'+data.mian[a].name+'</span></div></div>')
+					}
+//					$.each(data.slider, function(num,val){
+//					 	console.log(val)
+//						$(".swiper-wrapper").append('<div class="swiper-slide"><img src='+val.imgurl+' /></div>')
+//					});
+				})
+				//轮播图设置
+				$.ajax({
+					 url: "pujipuji-data.json",
+					 async:false,
+					 success: function(data){
+					 	$.each(data.slider, function(num,val){
+					 		console.log(val)
+							$(".swiper-wrapper").append('<div class="swiper-slide"><div class="swiper-slide-right"><span class="swiper-slide-number">'+val.title+'</span></div><img style=" width: 800px;height: 350px;" src="'+val.imgurl+'"/></div>')
+						});
+					}
+				})
+				//轮播图配置
+				//初始化Swiper
+				var mySwiper = new Swiper ('.swiper-container', {
+				direction: 'horizontal', // 垂直切换选项
+				loop: true, // 循环模式选项
+				    
+				// 如果需要分页器
+				pagination: {
+				  el: '.swiper-pagination',
+				},
+				    
+				// 如果需要前进后退按钮
+				navigation: {
+				  nextEl: '.swiper-button-next',
+				  prevEl: '.swiper-button-prev',
+				},
+				effect : 'cube',
+				
+				})
+			})
+		</script>
+	</head>
+	<body style="min-width: 1350px;">
+		<div id="nav">
+			<div id="nav-div">
+				<img id="nav-title" src="img/logo.png"/>
+				<!--<div id="nav-title">
+					噗叽噗叽
+				</div>-->
+				<div id="subnav">
+					<!--<span class="subnav-title">
+						日本动漫
+					</span>-->
+				</div>
+				<div id="nav-search-div">
+					<input type="text" name="" id="nav-search" value="" placeholder="请输入关键词" />
+					<div class="iconfont icon-sousuo">
+				
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+		<!--轮播图-->
+		<div class="swiper-container" style="box-shadow: 0px 0px 10px #607D8B;">
+			<div class="swiper-wrapper">
+				<!--<div class="swiper-slide"><div class="swiper-slide-right"><span class="swiper-slide-number"></span></div></div>-->
+			</div>
+			<!-- 如果需要分页器 -->
+			<div class="swiper-pagination"></div>
+		
+			<!-- 如果需要导航按钮 -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+			
+			<!-- 如果需要滚动条 -->
+			<!--<div class="swiper-scrollbar"></div>-->
+		</div>
+		
+		
+		
+		<!--中间-->
+		<div id="mian">
+			<div class="list-type">
+				<!--<span style="color: #2196F3;font-size: 20px;font-weight: bold;margin-left: 10px;">
+					|
+				</span>-->
+				<span class="list-type-text">
+					最近更新
+				</span>
+			</div>
+			<div id="mian-list">
+				
+			</div>
+		</div>
+		<!--<div class="list-mian">
+			<img class="list-img" src="http://p.xiaomingming.org/FileUpload/20187315162943664.jpg"/>
+			<div class="list-right">
+				<span class="list-number">
+					
+				</span>
+			</div>
+			
+			<div class="list-bottom">
+				<span class="list-text">
+					
+				</span>
+			</div>
+		</div>-->
+		<div id="bottom">
+			<div>
+				<p>本网站提供的资源均系收集于各大视频网站，本网站只提供web页面服务，并不提供影片资源存储，也不参与录制、上传</p>
+				<p>若本站收录的节目无意侵犯了贵司版权，请给2394874250@qq.com来信，我会及时处理和回复，谢谢</p>
+				<p>Copyright © 2018 噗叽噗叽 www.pujipuji.xyz</p>
+			</div>
+		</div>
+	</body>
+</html>
