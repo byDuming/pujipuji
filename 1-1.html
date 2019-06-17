@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>火影忍者-720集全 第一集</title>
+		<link rel="shortcut icon" type="image/x-icon" href="../img/icon.png"/>
+		<!--字体图标导入-->
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_1162955_kx0zv6k6fh.css"/>
+		<!--导航栏样式导入-->
+		<link rel="stylesheet" type="text/css" href="../css/nav&bootom.css"/>
+		<script src="../jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<!--播放插件导入-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/p2p-dplayer@latest/dist/DPlayer.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/cdnbye@latest"></script>
+		<script src="https://cdn.jsdelivr.net/npm/p2p-dplayer@latest"></script>
+		<script src="../dist/DPlayer.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				for (var n = 1 ; n <= 720 ; n++) {
+						$("#DramaSeries-list-ul").append('<li class="DramaSeries-list"><a href="#" class="DramaSeries-list-a">第'+n+'集</a></li>')
+				}
+				$(".DramaSeries-list-a:eq(0)").css({"background-color":"#2196F3","color":"white"})
+				$.get("../pujipuji-data.json",function(data){
+					//导航标题
+					$.each(data.subnav, function(num,val) {
+						$("#subnav").append('<a class="subnav-title">'+val+'</a>')
+					});
+					$(".subnav-title:eq(0)").attr('href',"../index");
+					$(".subnav-title:eq(1)").attr('href',"../rbdm.html");
+//					$.each(data.d1number, function(num,val) {
+//						$("#DramaSeries-list-ul").append('<li class="DramaSeries-list"><a href="#" class="DramaSeries-list-a">'+val+'</a></li>')
+//					});
+					$(".list-img").prop("src",data.d1.imgurl)
+					$(".det-text-title").text(data.d1.name)
+					$(".det-text:eq(0)").text("别名："+data.d1.bm)
+					$(".det-text:eq(1)").text("评分："+data.d1.pf)
+					$(".det-text:eq(2)").text("上映："+data.d1.sy)
+					$(".det-text:eq(3)").text("地区："+data.d1.dq)
+					$(".det-text:eq(4)").text("类型："+data.d1.type)
+					$(".det-text:eq(5)").text("标签："+data.d1.bq)
+					$(".det-text:eq(6)").text(data.d1.newnum)
+					$("#dmjj").text(data.d1.jj)
+				})
+				//播放
+				var dp = new DPlayer({
+			        container: document.getElementById('dplayer'),
+			        autoplay: true,
+			        video: {
+			            quality: [{
+			                name: '',
+			                url: 'https://sina.com-h-sina.com/20180731/3810_7cf5481a/index.m3u8',
+			                type: 'hls',
+			            }],
+			            defaultQuality: 0,
+			        },
+			        hlsjsConfig: {
+			            debug: false,
+			            // Other hlsjsConfig options provided by hls.js
+			            p2pConfig: {
+			                logLevel: true,
+			                // Other p2pConfig options provided by CDNBye
+			                wsSignalerAddr: 'wss://free.freesignal.net',
+			            }
+			        }
+			    });
+			})
+		</script>
+		<style type="text/css">
+			#mian{
+				width: 780px;
+				margin: auto;
+				/*border: #000000 solid 1px;*/
+				margin-top: 80px;
+			}
+			.center-title{
+				/*width: 30px;*/
+				padding: 5px;
+				font-weight: bold;
+				font-family: "微软雅黑";
+				color: white;
+				font-size: 14px;
+				background-color: #2196F3;
+				border-radius:0px 10px 0px 10px;
+				text-align: center;
+				margin-bottom: 10px;
+				display:inline-block;
+				box-shadow: 0px 0px 2px #607D8B;
+			}
+			/*剧集*/
+			#DramaSeries{
+				margin-top: 10px;
+				/*margin-left: 10px;*/
+				min-height: 375px;
+				overflow:auto;
+				margin-bottom: 20px;
+			}
+			.DramaSeries-list{
+				list-style: none;
+				font-family: "微软雅黑";
+				font-size: 14px;
+				/*width: 50px;
+				height: 30px;
+				padding: 3px;*/
+				background-color: #e0e0e0;
+				border-radius:10px;
+				line-height: 35px;
+				text-align: center;
+				float: left;
+				margin: 5px;
+			}
+			.DramaSeries-list-a{
+				width: 54px;
+				height: 35px;
+				/*padding: 3px;
+				margin: -3px;*/
+				color: black;
+				display:inline-block;
+				text-decoration: none;
+				border-radius:10px;
+				transition-property:background-color;
+				transition-duration:0.2s;
+				font-size:12px;
+			}
+			.DramaSeries-list-a:hover{
+				background-color: #BDBDBD;
+			}
+			/*播放*/
+			#dplayer{
+				height: 400px;
+				border-radius:10px;
+			}
+		</style>
+	</head>
+	<body style="min-width: 1350px;">
+		<div id="nav">
+			<div id="nav-div">
+				<img id="nav-title" src="../img/logo.png"/>
+				<!--<div id="nav-title">
+					噗叽噗叽
+				</div>-->
+				<div id="subnav">
+					<!--<span class="subnav-title">
+						日本动漫
+					</span>-->
+				</div>
+				<div id="nav-search-div">
+					<input type="text" name="" id="nav-search" value="" placeholder="请输入关键词" />
+					<div class="iconfont icon-sousuo">
+				
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+		<!--中间-->
+		<div id="mian">
+			<div id="mian-detbox">
+				<div id="dplayer">
+					
+				</div>
+				<div id="DramaSeries">
+					<span class="center-title">动漫剧集</span><br>
+					<ul id="DramaSeries-list-ul">
+						<!--<li class="DramaSeries-list"><a href="#" class="DramaSeries-list-a">第01集</a></li>-->
+					</ul>
+					
+					
+				</div>
+			</div>
+		</div>
+		<div id="bottom">
+			<div>
+				<p>本网站提供的资源均系收集于各大视频网站，本网站只提供web页面服务，并不提供影片资源存储，也不参与录制、上传</p>
+				<p>若本站收录的节目无意侵犯了贵司版权，请给2394874250@qq.com来信，我会及时处理和回复，谢谢</p>
+				<p>Copyright © 2018 噗叽噗叽 www.pujipuji.xyz</p>
+			</div>
+		</div>
+	</body>
+</html>
