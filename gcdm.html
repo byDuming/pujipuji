@@ -2,12 +2,8 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>噗叽噗叽-你想看的番，这里都有！</title> 
+		<title>噗叽噗叽-日本动漫</title> 
 		<link rel="shortcut icon" type="image/x-icon" href="img/icon.png"/>
-		<!--轮播js导入-->
-		<script src="swiper.min.js" type="text/javascript" charset="utf-8"></script>
-		<!--轮播css导入-->
-		<link rel="stylesheet" type="text/css" href="swiper.min.css"/>
 		<!--字体图标导入-->
 		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_1162955_kx0zv6k6fh.css"/>
 		<!--导航栏样式导入-->
@@ -23,8 +19,21 @@
 				/*height: 950px;*/
 				margin: auto;
 				/*border: #000000 solid 1px;*/
+				padding-top: 60px;
 			}
-			#mian-list{
+			#jpgm-mian-list{
+				overflow:auto;
+			}
+			#jdgm-mian-list{
+				overflow:auto;
+			}
+			#gxgm-mian-list{
+				overflow:auto;
+			}
+			#mxgm-mian-list{
+				overflow:auto;
+			}
+			#ydgm-mian-list{
 				overflow:auto;
 			}
 			::-webkit-scrollbar{
@@ -111,32 +120,6 @@
 				position: absolute;
 				float: left;
 			}
-			/*轮播图大小*/
-			.swiper-container{
-				width: 760px;
-				height: 350px;
-				margin-top: 70px;
-				margin-bottom: 10px;
-				border-radius:10px;
-				overflow:hidden;
-			}
-			/*轮播图简介*/
-			.swiper-slide-right{
-				position:absolute;
-				right: 0px;
-				background-color: black;
-				opacity: 0.8;
-				border-radius:0px 10px 0px 10px;
-				text-align: center;
-				line-height: 30px;
-			}
-			.swiper-slide-number{
-				font-size: 16px;
-				font: "微软雅黑";
-				color: white;
-				margin: 10px;
-				margin-bottom: 10px;
-			}
 		</style>
 		<script src="jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
@@ -149,49 +132,34 @@
 					});
 					$(".subnav-title:eq(0)").attr('href',"index");
 					$(".subnav-title:eq(1)").attr('href',"rbdm.html");
-					$(".subnav-title:eq(2)").attr('href',"gcdm.html");
-					//最近更新
-					$(".subnav-title:eq(0)").css({"color":"#2196F3","background-color":"white"})
-					console.log(data)
-					for(var a = data.mian.length-1 ; a >= 0 ; a--){
-						$("#mian-list").append('<div class="list-mian"><a href="Details/1.html"><img class="list-img" src="'+data.mian[a].imgurl+'"/></a><div class="list-right"><span class="list-number">'+data.mian[a].num+'</span></div><div class="list-bottom"><span class="list-text">'+data.mian[a].name+'</span></div></div>')
+					$(".subnav-title:eq(2)").css({"color":"#2196F3","background-color":"white"})
+					//精品国漫
+					for(var a = 0 ; a < 12 ; a++){
+						console.log(data.jprmmian[a])
+						$('#jpgm-mian-list').append('<div class="list-mian"><a href="Details/1.html" title="'+data.jpgmmian[a].name+'"><img class="list-img" src="'+data.jpgmmian[a].imgurl+'"/></a><div class="list-right"><span class="list-number">'+data.jpgmmian[a].num+'</span></div><div class="list-bottom"><span class="list-text">'+data.jpgmmian[a].name+'</span></div></div>')
+					}
+					//经典国漫
+					for(var a = 0 ; a < 12 ; a++){
+						$('#jdgm-mian-list').append('<div class="list-mian"><a href="Details/1.html" title="'+data.jdgmmian[a].name+'"><img class="list-img" src="'+data.jdgmmian[a].imgurl+'"/></a><div class="list-right"><span class="list-number">'+data.jdgmmian[a].num+'</span></div><div class="list-bottom"><span class="list-text">'+data.jdgmmian[a].name+'</span></div></div>')
+					}
+					//搞笑国漫
+					for(var a = 0 ; a < 12 ; a++){
+						$('#gxgm-mian-list').append('<div class="list-mian"><a href="Details/1.html" title="'+data.gxgmmian[a].name+'"><img class="list-img" src="'+data.gxgmmian[a].imgurl+'"/></a><div class="list-right"><span class="list-number">'+data.gxgmmian[a].num+'</span></div><div class="list-bottom"><span class="list-text">'+data.gxgmmian[a].name+'</span></div></div>')
+					}
+					//冒险国漫
+					for(var a = 0 ; a < 12 ; a++){
+						$('#mxgm-mian-list').append('<div class="list-mian"><a href="Details/1.html" title="'+data.mxgmmian[a].name+'"><img class="list-img" src="'+data.mxgmmian[a].imgurl+'"/></a><div class="list-right"><span class="list-number">'+data.mxgmmian[a].num+'</span></div><div class="list-bottom"><span class="list-text">'+data.mxgmmian[a].name+'</span></div></div>')
+					}
+					//运动国漫
+					for(var a = 0 ; a < 12 ; a++){
+						$('#ydgm-mian-list').append('<div class="list-mian"><a href="Details/1.html" title="'+data.ydgmmian[a].name+'"><img class="list-img" src="'+data.ydgmmian[a].imgurl+'"/></a><div class="list-right"><span class="list-number">'+data.ydgmmian[a].num+'</span></div><div class="list-bottom"><span class="list-text">'+data.ydgmmian[a].name+'</span></div></div>')
 					}
 //					$.each(data.slider, function(num,val){
 //					 	console.log(val)
 //						$(".swiper-wrapper").append('<div class="swiper-slide"><img src='+val.imgurl+' /></div>')
 //					});
-				})
-				//轮播图设置
-				$.ajax({
-					 url: "pujipuji-data.json",
-					 async:false,
-					 success: function(data){
-					 	$.each(data.slider, function(num,val){
-					 		console.log(val)
-							$(".swiper-wrapper").append('<div class="swiper-slide"><div class="swiper-slide-right"><span class="swiper-slide-number">'+val.title+'</span></div><img style=" width: 800px;height: 350px;" src="'+val.imgurl+'"/></div>')
-						});
-					}
-				})
-				//轮播图配置
-				//初始化Swiper
-				var mySwiper = new Swiper ('.swiper-container', {
-				direction: 'horizontal', // 垂直切换选项
-				loop: true, // 循环模式选项
-				    
-				// 如果需要分页器
-				pagination: {
-				  el: '.swiper-pagination',
-				},
-				    
-				// 如果需要前进后退按钮
-				navigation: {
-				  nextEl: '.swiper-button-next',
-				  prevEl: '.swiper-button-prev',
-				},
-				effect : 'cube',
-				
-				})
 			})
+		})
 		</script>
 	</head>
 	<body style="min-width: 1350px;">
@@ -216,35 +184,49 @@
 			</div>
 			
 		</div>
-		<!--轮播图-->
-		<div class="swiper-container" style="box-shadow: 0px 0px 10px #607D8B;">
-			<div class="swiper-wrapper">
-				<!--<div class="swiper-slide"><div class="swiper-slide-right"><span class="swiper-slide-number"></span></div></div>-->
-			</div>
-			<!-- 如果需要分页器 -->
-			<div class="swiper-pagination"></div>
-		
-			<!-- 如果需要导航按钮 -->
-			<div class="swiper-button-prev"></div>
-			<div class="swiper-button-next"></div>
-			
-			<!-- 如果需要滚动条 -->
-			<!--<div class="swiper-scrollbar"></div>-->
-		</div>
 		
 		
 		
 		<!--中间-->
 		<div id="mian">
 			<div class="list-type">
-				<!--<span style="color: #2196F3;font-size: 20px;font-weight: bold;margin-left: 10px;">
-					|
-				</span>-->
 				<span class="list-type-text">
-					最近更新
+					精品国漫
 				</span>
 			</div>
-			<div id="mian-list">
+			<div id="jpgm-mian-list">
+				
+			</div>
+			<div class="list-type">
+				<span class="list-type-text">
+					经典国漫
+				</span>
+			</div>
+			<div id="jdgm-mian-list">
+				
+			</div>
+			<div class="list-type">
+				<span class="list-type-text">
+					搞笑国漫
+				</span>
+			</div>
+			<div id="gxgm-mian-list">
+				
+			</div>
+			<div class="list-type">
+				<span class="list-type-text">
+					冒险国漫
+				</span>
+			</div>
+			<div id="mxgm-mian-list">
+				
+			</div>
+			<div class="list-type">
+				<span class="list-type-text">
+					运动国漫
+				</span>
+			</div>
+			<div id="ydgm-mian-list">
 				
 			</div>
 		</div>
