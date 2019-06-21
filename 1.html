@@ -12,7 +12,7 @@
 		<script type="text/javascript">
 			$(function(){
 				for (var n = 1 ; n <= 720 ; n++) {
-						$("#DramaSeries-list-ul").append('<li class="DramaSeries-list"><a href="#" class="DramaSeries-list-a">第'+n+'集</a></li>')
+						$("#DramaSeries-list-ul").append('<li class="DramaSeries-list"><a href="../Play/1-1.html" class="DramaSeries-list-a">第'+n+'集</a></li>')
 				}
 				$.get("../pujipuji-data.json",function(data){
 					//导航标题
@@ -151,7 +151,7 @@
 	<body style="min-width: 1350px;">
 		<div id="nav">
 			<div id="nav-div">
-				<img id="nav-title" src="../img/logo.png"/>
+				<a href="../index"><img id="nav-title" src="img/logo.png"/></a>
 				<!--<div id="nav-title">
 					噗叽噗叽
 				</div>-->
